@@ -73,6 +73,7 @@ html,body{
     display: flex;
     flex-wrap : nowrap;
     overflow-x : auto;
+    /* background-color: lightblue; */
 
 }
 #textContent::-webkit-scrollbar{
@@ -85,14 +86,16 @@ html,body{
 .elem{
     height: 100%;
     flex-shrink : 0;
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .elem h1{
     font-size: 115px;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: "cleon";
+    text-transform: uppercase;
 }
 #image-content{
     background-color: lightgreen;
