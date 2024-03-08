@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing : border-box;
+    font-family: "glancyr";
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #000;
+    padding: 5vw;
+}
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    position: relative;
+    transition: all linear 0.4s;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+button:after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: linear 0.4s;
+    z-index: -1;
+}
+button:hover::after{
+    width: 100%;
+}
+button:hover{
+    color: black;
+}
