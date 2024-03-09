@@ -543,6 +543,14 @@ html,body{
     overflow-y: hidden;
     overflow-x: hidden;
 }
+#page8-marque:hover{
+    background-color: black;
+    color: white;
+}
+#page8-marque:hover h1{
+    -webkit-text-stroke: 2px white;
+    color: black;
+}
 #page8-marque h1{
     display: inline-block;
     font-family: "monument";
