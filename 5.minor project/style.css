@@ -583,7 +583,7 @@ html,body{
     font-weight: 600;
 }
 #page8-middle-text h1{
-    width: 8vw;
+    width: 10vw;
     height:3vw;
     border-radius: 50%;
     display: flex;
@@ -608,7 +608,7 @@ html,body{
     font-weight: 600;
 }
 #page8-right-text h1{
-    width: 6vw;
+    width: 8vw;
     height:3vw;
     border-radius: 50%;
     display: flex;
