@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
     <div id="main">
         <div id="navigation-bar">
             <div id="navigation-left">
-                <a href="#" class="logo" ><H1>AUTO</H1><h3>EDA</h3></a>
+                <a href="#home" class="logo" ><H1>AUTO</H1><h3>EDA</h3></a>
             </div>
             <div id="navigation-right">
                 <a href="#home" class ="active">Home</a>
@@ -20,11 +29,67 @@
                 <a href="#about">About</a>
             </div>
         </div>
-        <section id = "home">Home</section>
-        <section id = "features">Features</section>
-        <section id = "docs">Docs</section>
-        <section id = "contact">Contact</section>
-        <section id = "about">About</section>
+        <div class="pages" id="home">
+            <div id="home-heading">
+                <h1>Transform Data into Actionable Insights</h1>
+                <h1>Your EDA Automation Platform</h1>
+                <h3>Discover seamless EDA automation and predictive analytics at Automated EDA, empowering users to extract actionable insights from their tabular data with ease</h3>
+                <a href="#docs"><button>Read More <i class="ri-arrow-right-up-line"></i></button></a>
+            </div>
+        </div>
+        <div class="pages" id="features">  
+            <div class="container">
+                <div class="features">
+                    <div class="feature-card active" onclick="showDetails('data-cleaning', this)">Data Cleaning -</div>
+                    <div class="feature-card" onclick="showDetails('correlation-analysis', this)">Correlation Analysis +</div>
+                    <div class="feature-card" onclick="showDetails('outliers', this)">Handling Outliers +</div>
+                    <div class="feature-card" onclick="showDetails('analysis', this)">Multivariate Analysis +</div>
+                </div>
+                <div class="details">
+                    <div id="data-cleaning" style="display: block;">
+                        <h2>Data Cleaning</h2>
+                        <p>For startups seeking Product-Market Fit, we assist founders and teams in aligning their product with their target customers.
+                    
+                            Through strategic brand and product design, we bridge the gap between user experience and user expectations, resulting in a smoother and more predictable sales process. Once Product-Market Fit is achieved, we provide support in acquiring new customers, servicing existing customers, and securing Series A funding and beyond.</p>
+                    </div>
+                    <div id="correlation-analysis" style="display: none;">
+                        <h2>Correlation Analysis</h2>
+                        <p>We assist founders in realizing the vision for their venture by extensively exploring new opportunities. Our goal is to discover solutions that address a consumer pain point, are possible, and have the highest potential for creating impactful change.
+                    
+                            Through strategic brand and product design, we develop prototypes and brand narratives for different solutions to achieve Problem Market Fit and secure pre-seed funding.</p>
+                    </div>
+                    <div id="outliers" style="display: none;">
+                        <h2>Handling Outliers</h2>
+                        <p>For companies looking to grow, we have developed a new milestone called Promise Market Fit. We aim to go beyond simply solving a problem and instead focus on serving a purpose. We also strive to go beyond just offering a product and instead pursue a passion.
+                    
+                            By then combining purpose and passion through strategic brand and product design, we can establish a stronger connection with your community, enabling growth beyond the usual trajectory. Moreover, our approach is organic, ensuring continued returns over time rather than short-lived successes.</p>
+                    </div>
+                    <div id="analysis" style="display: none;">
+                        <h2>Multivariate Analysis</h2>
+                        <p>For established companies seeking transformation, whether through new products, services, or markets, we apply the same principles and techniques we use for startups to larger-scale organizations.
+                    
+                            By employing strategic brand and product design, we collaborate with both new and existing teams to not only identify new opportunities, but also strike a balance between these efforts and the existing company and community. This approach helps us find a pathway to growth that is based on powerful innovation and compelling communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pages" id="try">
+            <h2>Try it out</h2>
+            <form id="try-form" enctype="multipart/form-data">
+                <label for="user-input">User Input:</label>
+                <textarea id="user-input" name="user_input"></textarea>
+                <br>
+                <label for="file-upload">Upload CSV/XLSX File:</label>
+                <input type="file" id="file-upload" name="file" accept=".csv,.xlsx">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <div class="pages" id="docs">Docs</div>
+        <div class="pages" id="contact">Contact</div>
+        <div class="pages" id="about">About</div>
+            
     </div>
     <script src="script.js"></script>
 </body>
