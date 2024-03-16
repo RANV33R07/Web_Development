@@ -1,7 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
+import os
 
 app = Flask(__name__)
+
+# Set the template directory to the same directory as app.py
+template_dir = os.path.abspath(os.path.dirname(__file__))
+app.template_folder = template_dir
 
 @app.route('/')
 def index():
@@ -33,6 +38,13 @@ def process_text(text):
 def process_data(df):
     # Process uploaded data (example)
     return df.describe()
+
+# Route to return some data to the HTML template
+@app.route('/data')
+def get_data():
+    # Example data to return
+    data = {'message': 'Flask integration is working!', 'status': 'success'}
+    return jsonify(data)
 
 if __name__ == '__main__':
     app.run(debug=True)
