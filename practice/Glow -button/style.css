@@ -15,7 +15,7 @@ html,body{
     justify-content: center;
     align-items: center;
 }
-.button{
+.readmore{
     padding: 18px 50px;
     font-family: gilroy;
     font-size: 20px;
@@ -27,7 +27,7 @@ html,body{
     z-index: 0;
     color: white;
 }
-.button::after{
+.readmore::after{
     content: "";
     left: 0;
     top: 0;
@@ -38,7 +38,7 @@ html,body{
     height: 100%;
     z-index: -1;
 }
-.button::before{
+.readmore::before{
     content: "";
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -65,12 +65,12 @@ html,body{
         background-position: 0 0;
     }
 }
-.button:hover::before{
+.readmore:hover::before{
     opacity: 1;
 }
-.button:active:after{
+.readmore:active:after{
     background-color: transparent;
 }
-.button:active{
+.readmore:active{
     color: #333;
 }
