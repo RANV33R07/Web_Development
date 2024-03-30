@@ -1,17 +1,17 @@
-function createRectangle(l , b){
+var form = document.querySelector('form');
+var inps = document.querySelectorAll('input[type="text"]');
+var h4 = document.querySelector("h4");
 
-    let rectangle = {
-        length : l,
-        breadth : b,
-
-        area : function(){
-            return this.length * this.breadth;
-        },
-        perimeter : function(){
-            return 2*(this.length + this.breadth); 
+form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    inps.forEach(function(inp){
+        if (inp.value.trim() === ""){
+            h4.textContent = "Please Enter the correct values";
+            h4.style.color = "red";
         }
-    }
-    return rectangle;
-}
-let rectangle1 = createRectangle(10,20);
-console.log(rectangle1.area());
+        else{
+            h4.textContent = "";
+            h4.style.color = "black";
+        }
+    })
+})

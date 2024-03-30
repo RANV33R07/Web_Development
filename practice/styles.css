@@ -4,9 +4,11 @@
     box-sizing: border-box;
     font-family: gilroy;
 }
-
-section{
-    background-image: url('abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg');
-    min-height: 100vh;
-    background-size: cover;
+html,body{
+    height: 100%;
+    width: 100%;
+}
+img{
+    width: 150px;
+    height: 200px;
 }
