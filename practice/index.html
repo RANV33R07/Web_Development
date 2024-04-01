@@ -3,16 +3,53 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="styles.css">
     <title>document</title>
 </head>
 <body>
-    <form action="">
-        <h4 id="error"></h4>
-        <input class="inp1" type="text" placeholder="Enter your name..">
-        <input class="inp2" type="text" placeholder="Enter your email..">
-        <input type="submit" value="Submit">
-    </form>
+
+    <div id="main">
+        <div id="container">
+            <div id="features">
+                <button class="btn" id="btn1">
+                    <h3>Data Cleaning</h3>
+                </button>
+                <button class="btn" id="btn2">
+                    <h3>Correlation Analysis</h3> 
+                </button>
+                <button class="btn" id="btn3">
+                    <h3>Handling Outliers</h3>
+                </button>
+                <button class="btn" id="btn4">
+                    <h3>Insight Generation</h3>
+                </button>
+            </div>
+
+            <div id="featuresDetails">
+                <div class="details" id="detail1">
+                    <h2>Data Cleaning</h2>
+                    <p>Data cleaning is a critical step in the data analysis process, ensuring that the dataset is accurate, complete, and consistent. It involves identifying and rectifying errors, inconsistencies, and missing values that may compromise the quality of the data. Common data quality issues include missing data points, outliers, duplicates, and incorrect data formats. Various data cleaning techniques, such as imputation, outlier detection, and deduplication, are employed to address these issues. By performing thorough data cleaning, analysts can improve the reliability of their analyses and ensure that decisions are based on trustworthy information.</p>
+                </div>
+                <div class="details" id="detail2">
+                    <h2>Correlation Analysis</h2>   
+                        <p>Correlation analysis is a statistical technique used to measure the strength and direction of the relationship between two or more variables. It helps analysts understand how changes in one variable are associated with changes in another variable. Correlation coefficients, such as Pearson correlation coefficient and Spearman rank correlation coefficient, quantify the degree of linear association between variables. Positive correlation indicates that variables move in the same direction, negative correlation indicates that variables move in opposite directions, and zero correlation indicates no relationship. Correlation analysis is valuable in identifying patterns, dependencies, and potential predictive relationships within the data.
+                </div>
+                <div class="details" id="detail3">
+                    <h2>Handling Outliers</h2>
+                        <p>Outliers are data points that significantly deviate from the majority of the dataset, potentially distorting analyses and models. Techniques such as statistical methods and machine learning algorithms help detect outliers. Analysts can then decide whether to transform or remove outliers, though careful consideration is necessary to avoid bias. By appropriately handling outliers, analysts ensure the accuracy and reliability of their analyses and models.</p>
+                </div>
+                <div class="details" id="detail4">
+                    <h2>insight generation</h2>
+                        <p>Insight generation involves extracting valuable insights and actionable conclusions from the data to inform decision-making processes. Through data analysis techniques such as visualization, statistical analysis, and machine learning algorithms, analysts uncover patterns, trends, and relationships within the data. These insights provide stakeholders with a deeper understanding of the underlying factors influencing business outcomes and help identify opportunities for optimization, innovation, and risk mitigation. Effective insight generation enables organizations to make data-driven decisions, improve performance, and stay competitive in today's rapidly evolving landscape.</p>
+                </div>
+            </div>
+    </div>
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>

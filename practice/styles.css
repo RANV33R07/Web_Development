@@ -3,12 +3,97 @@
     padding: 0;
     box-sizing: border-box;
     font-family: gilroy;
+    color: white;
 }
 html,body{
     height: 100%;
     width: 100%;
 }
-img{
-    width: 150px;
-    height: 200px;
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #131313;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+#container{
+    /* background-color: lightblue; */
+    /* border: 2px solid white; */
+    height: 80%;
+    width: 90%;
+    display: flex;
+    gap: 80px;
+    
+}
+#features{
+    flex-shrink: 0;
+    height: 100%;
+    /* background-color: lightcoral; */
+    /* border: 5px solid  white; */
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 10%;
+}
+
+#features h3 i{
+    color: white;
+    flex-shrink: 0; 
+    width: 100px;
+    height: 100%;
+}
+#features button{
+    height: 15%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid rgb(159, 153, 153);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+#features button h3{
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: "gilroy";
+    font-weight: 400;
+}
+#features button i{
+    font-size: 30px;
+
+}
+#featuresDetails{
+    width: calc(100% - 32%);
+}
+
+.details{
+    display: none;
+    padding-top: 50px;
+    border: 2px solid white;
+}
+.details h2 {
+
+    font-family: "multiple ranges";
+    line-height: 6vw;
+    /* margin-bottom: 1px; */
+    height: 4.7vw;
+    display: flex;
+    align-items: flex-start ;
+    max-width: 500px;
+    font-size: 6vw;
+    margin-bottom: 10vw;
+  }
+
+  .details p {
+    font-family: "gilroy";
+    margin-left: 5vw;
+    /* background-color: blue; */
+    line-height: 1.6;
+    font-size: 1.2vw; 
+    max-width: 650px;
+  }
